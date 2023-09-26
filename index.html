@@ -4,29 +4,48 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<nav>
 			<div class="wrapper">
-				<img src="./img/Logonetflix.png" alt="NETFLIX" />
-				<input type="text" placeholder="Polski" /><button class="login-btn">
-					Zaloguj się
-				</button>
+				<div class="nav-container">
+					<img src="./img/logo.png" alt="NETFLIX" class="nav-container__logo" />
+					<div class="nav-container__right">
+						<select
+							name="language"
+							id="language-select"
+							class="nav-container__right-language"
+						>
+							<option value="PL">Polski</option>
+							<option value="EN">English</option>
+						</select>
+						<button class="nav-container__right-login btn">Zaloguj się</button>
+					</div>
+				</div>
 			</div>
 		</nav>
 		<header>
-			<div class="hero-img">
-				<div class="hero-text">
-					<h1>Największe hity polskie i zagraniczne już od 29 zł.</h1>
+			<div class="hero__img">
+				<div class="hero__img-text wrapper">
+					<h1>
+						Największe hity polskie i zagraniczne. Wciągające historie. To
+						wszystko znajdziesz tutaj.
+					</h1>
 					<h2>Dołącz już dziś. Anuluj, kiedy chcesz.</h2>
 					<p>
-						Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić
+						Zaczynamy oglądać? Wprowadź adres e-mail, aby utworzyć lub odnowić
 						konto.
 					</p>
-					<div class="hero-row">
+					<div class="hero__img-row">
 						<input type="text" name="email" id="" placeholder="Adres e-mail" />
-						<button class="hero-btn">Rozpocznij ></button>
+						<button class="hero__img-row-btn">Rozpocznij ></button>
 					</div>
 				</div>
 			</div>
@@ -74,7 +93,7 @@
 			<div class="question-box"></div>
 
 			<p>
-				Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić
+				Zaczynamy oglądać? Wprowadź adres e-mail, aby utworzyć lub odnowić
 				konto.
 			</p>
 			<div class="hero-row">
@@ -83,5 +102,9 @@
 			</div>
 		</section>
 		<footer></footer>
+		<script
+			src="https://kit.fontawesome.com/d1641b1208.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
