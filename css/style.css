@@ -271,7 +271,7 @@ header .hero__img::before {
 
 .faq {
   display: flex;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   border-bottom: 8px solid #232323;
 }
@@ -294,10 +294,15 @@ header .hero__img::before {
   display: flex;
   align-items: center;
   padding-left: 1em;
-  height: 10%;
+  height: 9%;
   width: 100%;
   background-color: #2c2d2c;
   font-size: 2.4rem;
+  transition: background-color 0.3s;
+}
+.faq-container .faq-box:hover {
+  background-color: #444444;
+  cursor: pointer;
 }
 .faq-container .faq-box::after {
   position: absolute;
@@ -330,6 +335,13 @@ header .hero__img::before {
   color: white;
   background-color: rgb(24, 23, 23);
 }
+
+footer h6 {
+  font-size: 1.6rem;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
 @media (min-width: 1280px) {
   .wrapper {
     width: 65%;

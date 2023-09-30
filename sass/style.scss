@@ -295,7 +295,7 @@ header {
 // SEKCJA QUESTIONS
 .faq {
 	display: flex;
-	height: 70vh;
+	height: 80vh;
 	width: 100%;
 	border-bottom: 8px solid #232323;
 	&-container {
@@ -315,10 +315,15 @@ header {
 			display: flex;
 			align-items: center;
 			padding-left: 1em;
-			height: 10%;
+			height: 9%;
 			width: 100%;
 			background-color: #2c2d2c;
 			font-size: 2.4rem;
+			transition: background-color 0.3s;
+		}
+		.faq-box:hover {
+			background-color: #444444;
+			cursor: pointer;
 		}
 		.faq-box::after {
 			position: absolute;
@@ -345,6 +350,17 @@ header {
 		}
 	}
 }
+// SEKCJA FOOTER
+footer {
+	&-row {
+	}
+	h6 {
+		font-size: 1.6rem;
+		padding-top: 4em;
+		padding-bottom: 2em;
+	}
+}
+
 // media
 @media (min-width: 1280px) {
 	.wrapper {
