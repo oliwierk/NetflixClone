@@ -314,6 +314,8 @@ header {
 			position: relative;
 			display: flex;
 			align-items: center;
+			color: #fff;
+			border: none;
 			padding-left: 1em;
 			height: 9%;
 			width: 100%;
@@ -347,17 +349,53 @@ header {
 				@include email;
 				background-color: rgb(24, 23, 23);
 			}
+			&__btn {
+				font-size: 2.2rem;
+			}
 		}
 	}
 }
 // SEKCJA FOOTER
 footer {
-	&-row {
-	}
+	display: flex;
+	height: 25vh;
+	width: 100%;
 	h6 {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		padding-top: 4em;
 		padding-bottom: 2em;
+		color: #b3b3b3;
+	}
+}
+.footer__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	&-column {
+		width: 25%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		a {
+			color: #b3b3b3;
+			text-decoration: underline;
+			font-size: 1.6rem;
+		}
+		p {
+			color: #b3b3b3;
+			font-size: 1.6rem;
+		}
+	}
+	&-language {
+		padding: 0.5em 1.6em;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		border-radius: 4px;
+		font-size: 1.6rem;
+		width: 40%;
 	}
 }
 

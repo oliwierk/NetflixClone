@@ -117,14 +117,24 @@
 			<div class="wrapper">
 				<div class="faq-container">
 					<h3>Często zadawane pytania</h3>
-					<div class="faq-box">Czym jest Netflix?</div>
-					<div class="faq-box">Ile kosztuje korzystanie z serwisu Netflix?</div>
-					<div class="faq-box">Gdzie mogę oglądać</div>
-					<div class="faq-box">Jak zrezygnować z członkostwa?</div>
-					<div class="faq-box">
+					<button aria-expanded="false" class="faq-box">
+						Czym jest Netflix?
+					</button>
+					<button aria-expanded="false" class="faq-box">
+						Ile kosztuje korzystanie z serwisu Netflix?
+					</button>
+					<button aria-expanded="false" class="faq-box">
+						Gdzie mogę oglądać
+					</button>
+					<button aria-expanded="false" class="faq-box">
+						Jak zrezygnować z członkostwa?
+					</button>
+					<button aria-expanded="false" class="faq-box">
 						Jakie materiały mogę oglądać w serwisie Netflix
-					</div>
-					<div class="faq-box">Czy Netflix jest odpowiedni dla dzieci?</div>
+					</button>
+					<button aria-expanded="false" class="faq-box">
+						Czy Netflix jest odpowiegdni dla dzieci?
+					</button>
 
 					<p>
 						Zaczynamy oglądać? Wprowadź adres e-mail, aby utworzyć lub odnowić
@@ -132,7 +142,7 @@
 					</p>
 					<div class="faq-row">
 						<input type="text" name="email" id="" placeholder="Adres e-mail" />
-						<button class="faq-btn btn">Rozpocznij ></button>
+						<button class="faq-row__btn btn">Rozpocznij ></button>
 					</div>
 				</div>
 			</div>
@@ -147,6 +157,15 @@
 						<a href="">Jak oglądać?</a>
 						<a href="">Informacje o firmie</a>
 						<a href="">Informacje prawne</a>
+						<select
+							name="language"
+							id="language-select"
+							class="footer__row-language"
+						>
+							<option value="PL">Polski</option>
+							<option value="EN">English</option>
+						</select>
+						<p>Netflix Polska</p>
 					</div>
 					<div class="footer__row-column">
 						<a href="">Centrum pomocy</a>
@@ -171,6 +190,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/script.js"></script>
 		<script
 			src="https://kit.fontawesome.com/d1641b1208.js"
 			crossorigin="anonymous"
